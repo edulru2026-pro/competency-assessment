@@ -2417,13 +2417,11 @@
                                 <div class="h-4 rounded-full transition-all duration-1000 ${isEligible ? 'bg-emerald-500' : 'bg-indigo-500'}" style="width: ${progressPercent}%"></div>
                             </div>
                             <p class="text-sm text-slate-500 mt-2 text-center">
-                                ${isEligible ? '🎉 ยินดีด้วย! คุณประเมินครบตามเกณฑ์ที่กำหนดแล้ว ทางคณะครุศาสตร์จะส่งใบรับรองให้ท่านทาง e-mail ที่ท่านได้ระบุไว้' : 'สะสมยอดการประเมินให้ครบตามเกณฑ์เพื่อปลดล็อกใบรับรอง'}
+                                ${isEligible ? '🎉 ยินดีด้วย! คุณประเมินครบตามเกณฑ์ที่กำหนดแล้ว' : 'สะสมยอดการประเมินให้ครบตามเกณฑ์'}
                             </p>
                         </div>
                         <div class="flex justify-center">
-                            <button onclick="window.printCertificate('${myInfo.name}', '${rolesText}')" class="px-8 py-3 font-bold rounded-xl transition-all flex items-center justify-center gap-2 text-lg ${isEligible ? 'bg-emerald-600 hover:bg-emerald-700 text-white shadow-lg transform hover:-translate-y-1' : 'bg-slate-100 text-slate-400 cursor-not-allowed'}" ${!isEligible ? 'disabled' : ''}>
-                                <i data-lucide="download" class="w-5 h-5"></i> ดาวน์โหลด / พิมพ์ใบรับรอง
-                            </button>
+
                         </div>
                     </div>
                 </div>
